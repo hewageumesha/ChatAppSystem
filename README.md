@@ -9,9 +9,9 @@ This project is a fully functional real-time chat application designed to suppor
 - Profile Display: During the chat, user profiles (nickname and profile picture) are displayed alongside their messages.
 - Threaded Chat System: Each chat is managed in its own thread, ensuring smooth interaction between multiple users.
 
-### Technologies Used:
-- Java Swing for GUI Design
-- Java RMI for real-time communication
-- Hibernate for ORM (Object-Relational Mapping) with MySQL
-- MySQL for backend storage
-- Observer Design Pattern for handling chat subscriptions
+### Technologies used:
+-Java Swing for GUI Design
+-Java RMI for real-time communication
+-Hibernate for ORM (Object-Relational Mapping) with MySQL
+-MYSQL for backend storage
+-Observer Design Pattern for handling chat subscriptions
