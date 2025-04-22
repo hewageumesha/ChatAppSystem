@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84e4ecaf-4e18-4fc6-90b3-8c7dc9331eef" name="Changes" comment="update">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ChatApp/gui/LoginForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,6 +74,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ChatApp.gui" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.UserGui">
     <configuration name="AdminGui" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ChatApp.gui.AdminGui" />
@@ -139,7 +145,7 @@
       <updated>1744457481754</updated>
       <workItem from="1744457482246" duration="3208000" />
       <workItem from="1744685433360" duration="1506000" />
-      <workItem from="1745349794371" duration="448000" />
+      <workItem from="1745349794371" duration="1058000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
