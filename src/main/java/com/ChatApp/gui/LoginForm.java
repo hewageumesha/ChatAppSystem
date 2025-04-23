@@ -6,7 +6,7 @@ import java.awt.*;
 public class LoginForm extends JFrame {
     private JTextField usernameField = new JTextField(20);
     private JPasswordField passwordField = new JPasswordField(20);
-    private AuthService authService = new AuthService();
+    //private AuthService authService = new AuthService();
 
     public LoginForm() {
         setTitle("Login");
