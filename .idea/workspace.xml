@@ -6,12 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="84e4ecaf-4e18-4fc6-90b3-8c7dc9331eef" name="Changes" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ChatApp/gui/AdminGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ChatApp/gui/AdminGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ChatApp/gui/UserGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ChatApp/gui/UserGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ChatApp/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ChatApp/model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +38,9 @@
     "Application.AdminGui.executor": "Run",
     "Application.UserGui.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "umesha",
+    "git-widget-placeholder": "Deshan",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -90,14 +85,6 @@
         <item itemvalue="Application.UserGui" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
