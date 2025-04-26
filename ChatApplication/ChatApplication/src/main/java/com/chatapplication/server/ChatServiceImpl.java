@@ -1,6 +1,7 @@
 package com.chatapplication.server;
 
 
+import com.chatapplication.model.Chat;
 import com.chatapplication.model.User;
 import com.chatapplication.rmi.ChatClient;
 import com.chatapplication.rmi.ChatService;
@@ -88,6 +89,11 @@ public class ChatServiceImpl extends UnicastRemoteObject implements ChatService 
             } catch (IOException e) {
             }
         }
+    }
+
+    @Override
+    public List<Chat> getAllChats() {
+        return null;
     }
 
     private void stopChat() throws IOException {

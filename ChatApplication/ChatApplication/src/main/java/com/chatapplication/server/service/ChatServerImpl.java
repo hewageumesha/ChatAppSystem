@@ -1,5 +1,6 @@
 package com.chatapplication.server.service;
 
+import com.chatapplication.model.Chat;
 import com.chatapplication.rmi.ChatService;
 import com.chatapplication.rmi.ChatClient;
 
@@ -55,5 +56,10 @@ public class ChatServerImpl extends UnicastRemoteObject implements ChatService {
         for (ChatClient client : clients) {
             client.notifyUserLeft(nickName);
         }
+    }
+
+    @Override
+    public List<Chat> getAllChats() {
+        return null;
     }
 }
