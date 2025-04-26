@@ -9,7 +9,7 @@ import java.rmi.RemoteException;
 public class MainClient {
     public static void main(String[] args) throws RemoteException {
 
-        //new  ChatWindow("maxi",1);
+        
         new MainPanel();
 //        User User = null;
 //        new ViewAllChatsForm(User);
