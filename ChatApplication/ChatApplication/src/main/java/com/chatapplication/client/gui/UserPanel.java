@@ -4,6 +4,7 @@ import com.chatapplication.model.User;
 
 import javax.swing.*;
 import java.awt.*;
+import java.rmi.RemoteException;
 
 public class UserPanel extends JFrame {
     private User loggedInUser;
@@ -53,7 +54,11 @@ public class UserPanel extends JFrame {
         });
 
         viewChatsButton.addActionListener(e -> {
-            new ViewAllChatsForm(loggedInUser);
+            try {
+                new ViewAllChatsForm(loggedInUser);
+            } catch (RemoteException ex) {
+                throw new RuntimeException(ex);
+            }
         });
 
         joinChatButton.addActionListener(e -> {

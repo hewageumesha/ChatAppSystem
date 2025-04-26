@@ -15,6 +15,7 @@ public class ChatServerImpl extends UnicastRemoteObject implements ChatService {
 
     public ChatServerImpl() throws RemoteException {
         super();
+
     }
 
     @Override

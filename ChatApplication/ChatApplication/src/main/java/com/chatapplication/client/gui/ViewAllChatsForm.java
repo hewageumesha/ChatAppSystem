@@ -27,7 +27,7 @@ public class ViewAllChatsForm extends JFrame {
     private final Set<ChatClient> clients = new HashSet<>();
     private List<Chat> chats = new ArrayList<>();
 
-    public ViewAllChatsForm(User user) {
+    public ViewAllChatsForm(User user) throws RemoteException {
         this.loggedInUser = user;
         this.chatService = new ChatService() {
             @Override
@@ -151,7 +151,7 @@ public class ViewAllChatsForm extends JFrame {
         });
     }
 
-    private Object[][] fetchChatData() {
+    private Object[][] fetchChatData() throws RemoteException {
         List<Chat> chatList = chatService.getAllChats();
         Object[][] data = new Object[chatList.size()][4];
 

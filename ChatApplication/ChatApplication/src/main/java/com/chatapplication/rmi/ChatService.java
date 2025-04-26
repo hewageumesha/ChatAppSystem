@@ -15,5 +15,5 @@ public interface ChatService extends Remote {
     void userJoin(String nickName) throws RemoteException;
     void userLeave(String nickName) throws RemoteException;
 
-    List<Chat> getAllChats();
+    List<Chat> getAllChats() throws RemoteException;
 }
