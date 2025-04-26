@@ -9,8 +9,7 @@ public class UserPanel extends JFrame {
     private User loggedInUser;
     private JLabel welcomeLabel;
     private JButton updateProfileButton;
-    private JButton subscribeChatButton;
-    private JButton unsubscribeChatButton;
+    private JButton viewChatsButton;
     private JButton joinChatButton;
 
     public UserPanel(User user) {
@@ -30,14 +29,12 @@ public class UserPanel extends JFrame {
         welcomeLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         updateProfileButton = new JButton("Update Profile");
-        subscribeChatButton = new JButton("Subscribe to Chat");
-        unsubscribeChatButton = new JButton("Unsubscribe from Chat");
+        viewChatsButton = new JButton("View Chats");
         joinChatButton = new JButton("Join Chat");
 
         for (JButton btn : new JButton[]{
                 updateProfileButton,
-                subscribeChatButton,
-                unsubscribeChatButton,
+                viewChatsButton,
                 joinChatButton
         }) {
             btn.setFont(new Font("Segoe UI", Font.PLAIN, 14));
@@ -55,18 +52,13 @@ public class UserPanel extends JFrame {
             new UpdateProfileForm(loggedInUser);
         });
 
-//        subscribeChatButton.addActionListener(e -> {
-//            new SubscribeChatForm(loggedInUser);
-//        });
-//
-//        unsubscribeChatButton.addActionListener(e -> {
-//            new UnsubscribeChatForm(loggedInUser);
-//        });
-//
-//        joinChatButton.addActionListener(e -> {
-//            new ChatWindow(loggedInUser);
-//        }
-  //      );
+        viewChatsButton.addActionListener(e -> {
+            new ViewAllChatsForm(loggedInUser);
+        });
+
+        joinChatButton.addActionListener(e -> {
+            new ChatWindow(loggedInUser);
+        });
 
         panel.add(Box.createVerticalStrut(30));
         panel.add(welcomeLabel);

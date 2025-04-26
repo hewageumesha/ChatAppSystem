@@ -1,6 +1,5 @@
 package com.chatapplication.client.gui;
 
-import com.chatapplication.model.Chat;
 import com.chatapplication.model.User;
 import com.chatapplication.rmi.ChatClient;
 import com.chatapplication.rmi.ChatService;
@@ -22,9 +21,9 @@ public class ChatWindow extends JFrame {
     private String nickname;
     private int chatId;
 
-    public ChatWindow(User nickname, Chat chatId) {
+    public ChatWindow(User nickname) {
         this.nickname = String.valueOf(nickname);
-        this.chatId = chatId.getId();
+        this.chatId = chatId;
 
         initUI();
 

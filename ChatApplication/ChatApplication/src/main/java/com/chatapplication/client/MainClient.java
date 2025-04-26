@@ -10,10 +10,10 @@ public class MainClient {
     public static void main(String[] args) throws RemoteException {
 
 
-   //     new MainPanel();
+        new MainPanel();
 //        User User = null;
-        User User = null;
-        new ViewAllChatsForm(User);
+        //User User = null;
+        //new ViewAllChatsForm(User);
 
 
 
