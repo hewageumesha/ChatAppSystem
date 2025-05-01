@@ -3,6 +3,9 @@ package com.chatapplication.model;
 import com.chatapplication.model.enums.Role;
 import jakarta.persistence.*;
 
+import java.util.HashSet;
+import java.util.Set;
+
 
 @Entity
 @Table(name = "users")
@@ -86,6 +89,19 @@ public class User {
     public String toString() {
 
         return username;
+    }
+
+    @ManyToMany(mappedBy = "users")
+    private Set<Chat> chats = new HashSet<>();
+
+    // Getters and Setters for the fields
+
+    public Set<Chat> getChats() {
+        return chats;
+    }
+
+    public void setChats(Set<Chat> chats) {
+        this.chats = chats;
     }
 
 
