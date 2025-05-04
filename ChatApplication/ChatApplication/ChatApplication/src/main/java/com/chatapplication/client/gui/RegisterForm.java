@@ -102,7 +102,7 @@ public class RegisterForm extends JFrame {
             user.setUsername(usernameField.getText());
             user.setPassword(new String(passwordField.getPassword()));
             user.setNickname(nicknameField.getText());
-            user.setProfile_picture(profilePic);
+            user.setProfilePic(profilePic);
             user.setRole(String.valueOf(Role.USER));
 
             new UserDAO().save(user);

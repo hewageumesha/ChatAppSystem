@@ -1,8 +1,6 @@
 package com.chatapplication.model;
 
-import com.chatapplication.model.enums.Role;
 import jakarta.persistence.*;
-
 
 @Entity
 @Table(name = "users")
@@ -17,11 +15,14 @@ public class User {
     private String username;
     private String password;
     private String nickname;
-    private String profilePic;
+
+    @Lob
+    @Column(name = "profile_pic")
+    private byte[] profilePic;
+
     private String role; // "admin" or "user"
 
     // Getters and setters
-
 
     public int getId() {
         return id;
@@ -63,11 +64,11 @@ public class User {
         this.nickname = nickname;
     }
 
-    public String getProfilePic() {
+    public byte[] getProfilePic() {
         return profilePic;
     }
 
-    public void setProfilePic(String profilePic) {
+    public void setProfilePic(byte[] profilePic) {   // ✅ CORRECTED here
         this.profilePic = profilePic;
     }
 
@@ -79,14 +80,8 @@ public class User {
         this.role = role;
     }
 
-    public void setProfile_picture(byte[] profilePic) {
-    }
-
     @Override
     public String toString() {
-
         return username;
     }
-
-
 }

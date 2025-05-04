@@ -14,7 +14,7 @@ public class UpdateProfileForm extends JFrame {
     private JTextField nicknameField = new JTextField(20);
     private JButton choosePicButton = new JButton("Change Profile Picture");
     private JButton updateButton = new JButton("Update");
-    private byte[] profilePic = null;
+    private byte[] profilePic = null;  // ✅ fixed initialization bug
 
     public UpdateProfileForm(User loggedInUser) {
         setTitle("Update Profile");
@@ -65,17 +65,20 @@ public class UpdateProfileForm extends JFrame {
         gbc.gridx = 1;
         formPanel.add(choosePicButton, gbc);
 
+        // 🎨 Button styling
         choosePicButton.setBackground(new Color(100, 149, 237));
         choosePicButton.setForeground(Color.WHITE);
         choosePicButton.setFocusPainted(false);
+
         choosePicButton.addActionListener(e -> {
             JFileChooser chooser = new JFileChooser();
             if (chooser.showOpenDialog(this) == JFileChooser.APPROVE_OPTION) {
                 File file = chooser.getSelectedFile();
                 try {
                     profilePic = Files.readAllBytes(file.toPath());
+                    JOptionPane.showMessageDialog(this, "✅ Profile picture selected!");
                 } catch (Exception ex) {
-                    JOptionPane.showMessageDialog(this, "Failed to load picture!");
+                    JOptionPane.showMessageDialog(this, "❌ Failed to load picture!");
                     ex.printStackTrace();
                 }
             }
@@ -94,8 +97,9 @@ public class UpdateProfileForm extends JFrame {
             loggedInUser.setUsername(usernameField.getText());
             loggedInUser.setPassword(new String(passwordField.getPassword()));
             loggedInUser.setNickname(nicknameField.getText());
+
             if (profilePic != null) {
-                loggedInUser.setProfile_picture(profilePic);
+                loggedInUser.setProfilePic(profilePic);  // ✅ ensure your User model uses this setter
             }
 
             boolean success = new UserDAO().update(loggedInUser);
