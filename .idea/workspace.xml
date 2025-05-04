@@ -5,13 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84e4ecaf-4e18-4fc6-90b3-8c7dc9331eef" name="Changes" comment="update">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ChatDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ChatUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ChatApp/gui/AdminGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ChatApp/gui/AdminGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ChatApp/gui/UserGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ChatApp/gui/UserGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ChatApp/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ChatApp/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApplication/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApplication/ChatApplication/ChatApplication/src/main/java/com/chatapplication/client/ChatClientImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ChatClientImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApplication/ChatApplication/ChatApplication/src/main/java/com/chatapplication/client/ChatUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApplication/ChatApplication/ChatApplication/src/main/java/com/chatapplication/client/LoginFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoginFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApplication/ChatApplication/ChatApplication/src/main/java/com/chatapplication/client/MainClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApplication/ChatApplication/ChatApplication/src/main/java/com/chatapplication/client/gui/AdminPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AdminPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApplication/ChatApplication/ChatApplication/src/main/java/com/chatapplication/client/gui/RegisterForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RegisterForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApplication/ChatApplication/ChatApplication/src/main/java/com/chatapplication/client/gui/UpdateProfileForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApplication/ChatApplication/ChatApplication/src/main/java/com/chatapplication/client/gui/UpdateProfileForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApplication/ChatApplication/ChatApplication/src/main/java/com/chatapplication/dao/ChatDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApplication/ChatApplication/ChatApplication/src/main/java/com/chatapplication/dao/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HibernateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApplication/ChatApplication/ChatApplication/src/main/java/com/chatapplication/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApplication/ChatApplication/ChatApplication/src/main/java/com/chatapplication/model/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApplication/ChatApplication/ChatApplication/src/main/java/com/chatapplication/model/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApplication/ChatApplication/ChatApplication/src/main/java/com/chatapplication/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApplication/ChatApplication/ChatApplication/src/main/java/com/chatapplication/model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,29 +44,30 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2vcw4GfKnamIdw7HwIzc20sL4ni" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AdminGui.executor": "Run",
-    "Application.UserGui.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "umesha",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/umesha 1096/Desktop/ChatAppSystem/src/main/java/com/ChatApp/Main.java",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AdminGui.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UserGui.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Sajiya&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/GitHub/ChatAppSystem&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/umesha 1096/Desktop/ChatAppSystem/src/main/java/com/ChatApp/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.AdminGui">
     <configuration name="AdminGui" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ChatApp.gui.AdminGui" />
@@ -94,8 +105,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.23774.435" />
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435" />
       </set>
     </attachedChunks>
   </component>
@@ -109,6 +120,8 @@
       <updated>1744457481754</updated>
       <workItem from="1744457482246" duration="3208000" />
       <workItem from="1744685433360" duration="1506000" />
+      <workItem from="1746338046237" duration="152000" />
+      <workItem from="1746365635662" duration="626000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />

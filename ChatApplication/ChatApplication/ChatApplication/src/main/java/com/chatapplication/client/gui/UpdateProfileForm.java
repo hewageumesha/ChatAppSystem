@@ -95,7 +95,7 @@ public class UpdateProfileForm extends JFrame {
             loggedInUser.setPassword(new String(passwordField.getPassword()));
             loggedInUser.setNickname(nicknameField.getText());
             if (profilePic != null) {
-                loggedInUser.setProfilePic(profilePic);
+                loggedInUser.setProfile_picture(profilePic);
             }
 
             boolean success = new UserDAO().update(loggedInUser);
