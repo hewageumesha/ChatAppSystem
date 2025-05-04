@@ -102,13 +102,18 @@ public class RegisterForm extends JFrame {
             user.setUsername(usernameField.getText());
             user.setPassword(new String(passwordField.getPassword()));
             user.setNickname(nicknameField.getText());
-            user.setProfile_picture(profilePic);
-            user.setRole(String.valueOf(Role.USER));
+            user.setProfilePic(profilePic);
+            user.setRole(Role.USER); // ✅
+
 
             new UserDAO().save(user);
             JOptionPane.showMessageDialog(this, "🎉 Registered successfully!");
 
             new LoginForm();
+            LoginForm loginForm = new LoginForm();
+            loginForm.setVisible(true);
+            dispose(); // close registration window
+
         });
 
         add(formPanel, BorderLayout.CENTER);
