@@ -23,7 +23,8 @@ public class User {
     private byte[] profilePic;
 
     @Enumerated(EnumType.STRING)
-    private Role role; // Using enum instead of String
+    private Role role;
+
 
     @ManyToMany(mappedBy = "users")
     private Set<Chat> chats = new HashSet<>();
