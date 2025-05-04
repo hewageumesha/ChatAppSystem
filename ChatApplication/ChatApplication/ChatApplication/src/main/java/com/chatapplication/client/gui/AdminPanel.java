@@ -88,15 +88,16 @@ public class AdminPanel extends JFrame {
         userComboBox.removeAllItems();
         List<User> users = new UserDAO().getAllUsers();
         for (User u : users) {
-            if ("USER".equalsIgnoreCase(u.getRole())) {
+            if ("USER".equalsIgnoreCase(u.getRole().name())) {  // ✅ FIXED
                 userComboBox.addItem(u);
             }
         }
     }
 
+
     private void loadChats() {
         chatComboBox.removeAllItems();
-        List<Chat> chats = new ChatDAO().getAllChats();
+        List<Chat> chats = new ChatDAO().getAll();
         for (Chat chat : chats) {
             chatComboBox.addItem(chat);
         }

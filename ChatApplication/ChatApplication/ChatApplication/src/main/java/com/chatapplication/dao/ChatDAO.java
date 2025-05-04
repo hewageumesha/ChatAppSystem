@@ -7,6 +7,7 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -93,7 +94,8 @@ public class ChatDAO {
         try (Session session = HibernateUtil.getSessionFactory().openSession()) {
             User user = session.get(User.class, userId);
             if (user != null) {
-                return user.getChats(); // Assuming User has a 'chats' collection
+                return new ArrayList<>(user.getChats());
+                // Assuming User has a 'chats' collection
             }
             return null;
         }
