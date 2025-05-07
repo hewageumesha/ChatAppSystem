@@ -14,4 +14,4 @@ This project is a fully functional real-time chat application designed to suppor
 -Java RMI for real-time communication
 -Hibernate for ORM (Object-Relational Mapping) with MySQL
 -MYSQL for backend storage
--Observer Design Pattern for handling chat subscriptions
+-Observer Design Pattern for handling chat subscriptions
