@@ -1,4 +1,4 @@
-package com.chatapplication.server.;
+package com.chatapplication.server;
 
 import com.chatapplication.server.service.ChatServerImpl;
 import com.chatapplication.rmi.ChatService;
