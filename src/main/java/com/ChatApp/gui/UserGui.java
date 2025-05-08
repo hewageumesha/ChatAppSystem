@@ -1,6 +1,6 @@
 package com.ChatApp.gui;
 
-import com.ChatApp.dao.UserDao;
+import com.ChatApp.dao.UserDAO;
 import com.ChatApp.model.User;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;
@@ -9,8 +9,6 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class UserGui extends JFrame {
     private JTextField usernameField;
@@ -59,7 +57,7 @@ public class UserGui extends JFrame {
                 StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
                 SessionFactory sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
 
-                UserDao userDAO = new UserDao(sessionFactory);
+                UserDAO userDAO = new UserDAO(sessionFactory);
                 User user = new User();
                 user.setUsername(username);
                 user.setPassword(password);

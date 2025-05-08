@@ -7,10 +7,10 @@ import org.hibernate.query.Query;
 
 import java.util.List;
 
-public class UserDao {
+public class UserDAO {
     private SessionFactory sessionFactory;
 
-    public UserDao(SessionFactory sessionFactory) {
+    public UserDAO(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
 

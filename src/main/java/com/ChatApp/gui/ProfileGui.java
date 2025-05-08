@@ -2,7 +2,7 @@ package com.ChatApp.gui;
 
 
 
-import com.ChatApp.dao.UserDao;
+import com.ChatApp.dao.UserDAO;
 import com.ChatApp.model.User;
 import com.ChatApp.util.PasswordHasher;
 import com.ChatApp.util.Session;
@@ -64,7 +64,7 @@ public class ProfileGui extends JFrame {
 
             StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
             SessionFactory sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
-            UserDao userDao = new UserDao(sessionFactory);
+            UserDAO userDao = new UserDAO(sessionFactory);
             userDao.saveUser(user); // You might create an updateUser() method for best practice
 
             JOptionPane.showMessageDialog(this, "✅ Profile updated successfully!");
