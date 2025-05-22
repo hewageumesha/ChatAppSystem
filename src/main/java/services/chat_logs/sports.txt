@@ -1,0 +1,12 @@
+✅ Connected to chat server successfully
+🔔 Chat started at: May 18, 2025 09:40 AM
+✅ saji has joined the chat
+admin has joined the chat.
+[09:40] You: hi
+admin [09:40]: hi
+[09:40] You: how
+admin [09:40]: now
+[09:40] You: ye
+admin has left the chat.
+❌ saji left the chat
+🔔 Chat stopped at [09:41]: May 18, 2025 09:41 AM

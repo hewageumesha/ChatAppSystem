@@ -1,0 +1,15 @@
+✅ Connected to chat server successfully
+🔔 Chat started at: May 18, 2025 11:05 AM
+✅ saji has joined the chat
+fathi has joined the chat.
+🔔 You are now viewing Education. Only subscribers can send messages to this chat.
+[11:09] You: hi
+fathi [11:09]: how are u
+[11:09] You: ine
+fathi [11:09]: do y study yaester day
+[11:09] You: no
+fathi [11:09]: why
+[11:09] You: simple
+fathi has left the chat.
+❌ saji left the chat
+🔔 Chat stopped at [11:10]: May 18, 2025 11:10 AM
